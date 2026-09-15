@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avora Events — Event Design &amp; Production</title>
+<meta name="description" content="Avora Events is a full-service events agency working across weddings, corporate programmes, brand experiences and live entertainment. Planning, design, production and on-ground execution, under one roof.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="page">
+
+<header class="site-header">
+  <div class="header-bar">
+    <a href="#top" class="brand">
+      <span class="brand-mark">AVORA</span>
+      <span class="brand-sub">Events</span>
+    </a>
+    <nav class="primary-nav">
+      <a href="#top" class="is-current">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Our Events</a>
+      <a href="#venues">Venues</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-social">
+      <a href="#contact" class="btn btn-icon btn-secondary" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+      <a href="#contact" class="btn btn-icon btn-secondary" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+      <a href="#contact" class="btn btn-icon btn-secondary" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+    </div>
+    <button type="button" class="btn btn-secondary btn-icon menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false"><i class="ph ph-list"></i></button>
+  </div>
+  <nav class="mobile-drawer" id="mobileDrawer">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Our Events</a>
+    <a href="#venues">Venues</a>
+    <a href="#contact">Contact</a>
+    <button type="button" class="btn btn-primary btn-block js-open-enquiry">Plan Your Event</button>
+  </nav>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-media">
+    <img src="assets/images/hero-mandap.jpg" alt="A decorated mandap stage set for an Indian wedding ceremony">
+    <svg class="hero-beams" aria-hidden="true" viewBox="0 0 1200 760" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="avBeam" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FEC89A" stop-opacity=".5"/>
+          <stop offset="55%" stop-color="#F49595" stop-opacity=".14"/>
+          <stop offset="100%" stop-color="#F49595" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="avBeam2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFDAB9" stop-opacity=".34"/>
+          <stop offset="60%" stop-color="#FEC89A" stop-opacity=".10"/>
+          <stop offset="100%" stop-color="#FEC89A" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <g>
+        <polygon points="160,0 196,0 330,760 -40,760" fill="url(#avBeam)"/>
+        <polygon points="420,0 452,0 470,760 250,760" fill="url(#avBeam2)"/>
+        <polygon points="748,0 780,0 950,760 640,760" fill="url(#avBeam2)"/>
+        <polygon points="1010,0 1046,0 1250,760 890,760" fill="url(#avBeam)"/>
+      </g>
+    </svg>
+    <a href="https://unsplash.com/@ikshanaproductions" target="_blank" rel="noopener" class="hero-credit">Photo by iKshana Productions on Unsplash</a>
+    <div class="hero-wash"></div>
+  </div>
+  <svg class="hero-garland" aria-hidden="true" viewBox="0 0 1200 170" preserveAspectRatio="none">
+    <path d="M0 6 Q300 132 600 96 Q900 60 1200 150" fill="none" stroke="#A3444A" stroke-opacity=".28" stroke-width="2"/>
+    <circle cx="0" cy="6" r="11" fill="#F49595" fill-opacity=".85"/>
+    <circle cx="75" cy="35" r="8" fill="#FEC89A" fill-opacity=".85"/>
+    <circle cx="150" cy="59" r="11" fill="#F49595" fill-opacity=".85"/>
+    <circle cx="225" cy="78" r="8" fill="#FEC89A" fill-opacity=".85"/>
+    <circle cx="300" cy="92" r="11" fill="#F49595" fill-opacity=".85"/>
+    <circle cx="375" cy="100" r="8" fill="#FEC89A" fill-opacity=".85"/>
+    <circle cx="450" cy="104" r="11" fill="#F49595" fill-opacity=".85"/>
+    <circle cx="525" cy="102" r="8" fill="#FEC89A" fill-opacity=".85"/>
+    <circle cx="600" cy="96" r="11" fill="#F49595" fill-opacity=".85"/>
+    <circle cx="675" cy="89" r="8" fill="#FEC89A" fill-opacity=".85"/>
+    <circle cx="750" cy="86" r="11" fill="#F49595" fill-opacity=".85"/>
+    <circle cx="825" cy="87" r="8" fill="#FEC89A" fill-opacity=".85"/>
+    <circle cx="900" cy="92" r="11" fill="#F49595" fill-opacity=".85"/>
+    <circle cx="975" cy="100" r="8" fill="#FEC89A" fill-opacity=".85"/>
+    <circle cx="1050" cy="113" r="11" fill="#F49595" fill-opacity=".85"/>
+    <circle cx="1125" cy="129" r="8" fill="#FEC89A" fill-opacity=".85"/>
+    <circle cx="1200" cy="150" r="11" fill="#F49595" fill-opacity=".85"/>
+  </svg>
+  <svg class="hero-rings" aria-hidden="true" viewBox="0 0 600 600">
+    <g fill="none" stroke="#E0757A" stroke-opacity=".32">
+      <circle cx="300" cy="300" r="286" stroke-dasharray="2 9"/>
+      <circle cx="300" cy="300" r="242"/>
+      <circle cx="300" cy="300" r="196" stroke-dasharray="14 10"/>
+    </g>
+  </svg>
+  <div class="hero-content">
+    <div class="hero-kicker">
+      <span class="rule"></span>
+      <span class="label">Event design &amp; production · Since 2014</span>
+      <span class="rule"></span>
+    </div>
+    <h1 class="hero-title">We Create Events Worth Remembering.</h1>
+    <p class="hero-lede">From intimate celebrations to large-scale corporate experiences, we plan, design and execute events that leave an impression.</p>
+    <div class="hero-actions">
+      <button type="button" class="btn btn-pill btn-hero-primary js-open-enquiry">Plan Your Event</button>
+      <a href="#work" class="btn btn-pill btn-hero-secondary">View Our Work</a>
+    </div>
+  </div>
+  <div class="hero-mark-wrap">
+    <div class="hero-mark">Avora Events</div>
+    <div class="hero-mark-mirror" aria-hidden="true">Avora Events</div>
+  </div>
+  <div class="hero-tickers">
+    <span><i class="ph ph-confetti"></i>Weddings</span>
+    <span><i class="ph ph-presentation-chart"></i>Corporate</span>
+    <span><i class="ph ph-rocket-launch"></i>Launches</span>
+    <span><i class="ph ph-music-notes"></i>Live shows</span>
+    <span><i class="ph ph-lightbulb-filament"></i>Production</span>
+  </div>
+</section>
+
+<section aria-labelledby="produce-heading">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow">What we produce</div>
+      <h2 id="produce-heading">Five kinds of rooms, one standard.</h2>
+    </div>
+    <a href="#services" class="section-link">All services <i class="ph ph-arrow-right"></i></a>
+  </div>
+  <div class="category-grid">
+    <a href="#services" class="category-card">
+      <img src="https://images.unsplash.com/photo-1610173827043-9db50e0d8ef9?auto=format&fit=crop&w=900&q=70" alt="wedding — low-light mandap or reception" title="Photo by Alok Verma on Unsplash" loading="lazy">
+      <div class="scrim"></div>
+      <div class="cat-icon"><i class="ph ph-confetti"></i></div>
+      <div class="cat-copy">
+        <div class="cat-name">Weddings &amp; Social</div>
+        <div class="cat-note">Weddings, engagements, birthdays, anniversaries, private parties</div>
+      </div>
+    </a>
+    <a href="#services" class="category-card">
+      <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=900&q=70" alt="conference stage, dark room" title="Photo by Teemu Paananen on Unsplash" loading="lazy">
+      <div class="scrim"></div>
+      <div class="cat-icon"><i class="ph ph-presentation-chart"></i></div>
+      <div class="cat-copy">
+        <div class="cat-name">Corporate</div>
+        <div class="cat-note">Conferences, seminars, annual meets, awards, team-building</div>
+      </div>
+    </a>
+    <a href="#services" class="category-card">
+      <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=70" alt="product launch installation" title="Photo by CHUTTERSNAP on Unsplash" loading="lazy">
+      <div class="scrim"></div>
+      <div class="cat-icon"><i class="ph ph-rocket-launch"></i></div>
+      <div class="cat-copy">
+        <div class="cat-name">Brand &amp; Experiential</div>
+        <div class="cat-note">Product launches, activations, exhibitions, promotions</div>
+      </div>
+    </a>
+    <a href="#services" class="category-card">
+      <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=900&q=70" alt="live performance, stage lights" title="Photo by Noiseporn on Unsplash" loading="lazy">
+      <div class="scrim"></div>
+      <div class="cat-icon"><i class="ph ph-music-notes"></i></div>
+      <div class="cat-copy">
+        <div class="cat-name">Entertainment</div>
+        <div class="cat-note">Celebrity appearances, live acts, DJs, artists, anchors</div>
+      </div>
+    </a>
+    <a href="#services" class="category-card">
+      <img src="https://images.unsplash.com/photo-1736155983520-a0f7d5949d39?auto=format&fit=crop&w=900&q=70" alt="rigging / truss detail shot" title="Photo by AMIT KUMAR on Unsplash" loading="lazy">
+      <div class="scrim"></div>
+      <div class="cat-icon"><i class="ph ph-lightbulb-filament"></i></div>
+      <div class="cat-copy">
+        <div class="cat-name">Event Production</div>
+        <div class="cat-note">Stage, décor, lighting, sound, LED, logistics, guest management</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="split">
+    <div class="about-copy">
+      <div class="section-eyebrow">Why choose us</div>
+      <h2>A single team from first sketch to final teardown.</h2>
+      <p>Avora is a full-service events agency working across weddings, corporate programmes and brand experiences. Planning, design, production and on-ground execution sit under one roof, which is why nothing gets lost between vendors.</p>
+      <div class="about-tags">
+        <span class="tag tag-outline">In-house production</span>
+        <span class="tag tag-outline">Vetted vendor network</span>
+        <span class="tag tag-outline">Single point of contact</span>
+      </div>
+    </div>
+    <div class="reasons">
+      <div class="reason">
+        <div class="reason-n">01</div>
+        <div><div class="reason-title">Planning and production in one team</div><div class="reason-body">The people who design the event are the people who build it. No handover, no gaps.</div></div>
+      </div>
+      <div class="reason">
+        <div class="reason-n">02</div>
+        <div><div class="reason-title">Owned inventory, held dates</div><div class="reason-body">Stage, lighting, sound and LED in-house, so timelines and costs stay predictable.</div></div>
+      </div>
+      <div class="reason">
+        <div class="reason-n">03</div>
+        <div><div class="reason-title">A vendor bench, not a search</div><div class="reason-body">Decorators, caterers, photographers, artists and AV crews we have worked with for years.</div></div>
+      </div>
+      <div class="reason">
+        <div class="reason-n">04</div>
+        <div><div class="reason-title">On-ground command</div><div class="reason-body">A named producer on site from load-in to teardown, with a written run of show.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-band">
+  <div class="stats-glow"></div>
+  <div class="stats-pattern" aria-hidden="true"></div>
+  <div class="stats-grid">
+    <div><div class="stat-k">640+</div><div class="stat-v">Events delivered</div></div>
+    <div><div class="stat-k">11</div><div class="stat-v">Years running</div></div>
+    <div><div class="stat-k">38</div><div class="stat-v">Cities</div></div>
+    <div><div class="stat-k">1,400</div><div class="stat-v">Largest guest count</div></div>
+  </div>
+</section>
+
+<section aria-labelledby="featured-heading">
+  <div class="section-eyebrow">Featured event</div>
+  <div class="featured-split">
+    <div class="featured-media">
+      <img src="assets/images/featured-project.jpg" alt="Featured event — stage wide" loading="lazy">
+      <div class="scrim"></div>
+      <a href="https://unsplash.com/@jakobdalbjorn" target="_blank" rel="noopener" class="hero-credit" style="bottom:10px">Photo by Jakob Dalbjörn on Unsplash</a>
+    </div>
+    <div class="featured-copy">
+      <h2 id="featured-heading">The Meridian Annual Summit</h2>
+      <div class="featured-meta">Corporate · Grand Hyatt, Goa · Nov 2025</div>
+      <p>A three-day summit for 1,400 delegates: main plenary, four breakout stages, an awards night and a closing gala. Built and struck in nine days.</p>
+      <div class="featured-points">
+        <div><i class="ph ph-check"></i>Stage, LED and rigging across five rooms</div>
+        <div><i class="ph ph-check"></i>Delegate registration and guest management</div>
+        <div><i class="ph ph-check"></i>Awards production, film and live coverage</div>
+      </div>
+      <a href="#work" class="btn btn-secondary">Read the case study</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-eyebrow">Services</div>
+  <h2>Everything an event needs, in one contract.</h2>
+  <div class="accordion" id="servicesAccordion">
+    <div class="accordion-item">
+      <button type="button" class="accordion-trigger" data-group="Wedding & Social Events">
+        <span class="g-n">01</span><i class="ph ph-confetti g-mark"></i>
+        <span class="g-name">Wedding &amp; Social Events</span>
+        <i class="ph ph-minus g-toggle-icon"></i>
+      </button>
+      <div class="accordion-panel is-open">
+        <div class="accordion-panel-grid">
+          <div>Weddings</div><div>Engagements</div><div>Birthdays</div><div>Anniversaries</div><div>Private parties</div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button type="button" class="accordion-trigger" data-group="Corporate Events">
+        <span class="g-n">02</span><i class="ph ph-presentation-chart g-mark"></i>
+        <span class="g-name">Corporate Events</span>
+        <i class="ph ph-plus g-toggle-icon"></i>
+      </button>
+      <div class="accordion-panel">
+        <div class="accordion-panel-grid">
+          <div>Conferences</div><div>Seminars</div><div>Annual meets</div><div>Corporate parties</div><div>Team-building events</div><div>Award ceremonies</div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button type="button" class="accordion-trigger" data-group="Brand & Experiential">
+        <span class="g-n">03</span><i class="ph ph-rocket-launch g-mark"></i>
+        <span class="g-name">Brand &amp; Experiential</span>
+        <i class="ph ph-plus g-toggle-icon"></i>
+      </button>
+      <div class="accordion-panel">
+        <div class="accordion-panel-grid">
+          <div>Product launches</div><div>Brand activations</div><div>Exhibitions</div><div>Promotional events</div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button type="button" class="accordion-trigger" data-group="Entertainment">
+        <span class="g-n">04</span><i class="ph ph-music-notes g-mark"></i>
+        <span class="g-name">Entertainment</span>
+        <i class="ph ph-plus g-toggle-icon"></i>
+      </button>
+      <div class="accordion-panel">
+        <div class="accordion-panel-grid">
+          <div>Celebrity appearances</div><div>Live performances</div><div>DJs</div><div>Artists</div><div>Anchors</div><div>Entertainment shows</div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button type="button" class="accordion-trigger" data-group="Event Production">
+        <span class="g-n">05</span><i class="ph ph-lightbulb-filament g-mark"></i>
+        <span class="g-name">Event Production</span>
+        <i class="ph ph-plus g-toggle-icon"></i>
+      </button>
+      <div class="accordion-panel">
+        <div class="accordion-panel-grid">
+          <div>Stage &amp; décor</div><div>Lighting</div><div>Sound</div><div>LED screens</div><div>Photography &amp; videography</div><div>Logistics</div><div>Guest management</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow">Our events</div>
+      <h2>Selected work.</h2>
+    </div>
+    <div class="work-filters" id="workFilters">
+      <button type="button" class="chip is-active" data-filter="All">All</button>
+      <button type="button" class="chip" data-filter="Weddings">Weddings</button>
+      <button type="button" class="chip" data-filter="Corporate">Corporate</button>
+      <button type="button" class="chip" data-filter="Social">Social</button>
+      <button type="button" class="chip" data-filter="Brand">Brand</button>
+      <button type="button" class="chip" data-filter="Entertainment">Entertainment</button>
+    </div>
+  </div>
+  <div class="project-grid" id="projectGrid">
+    <article class="project-card" data-cat="Weddings">
+      <div class="project-media">
+        <img src="https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?auto=format&fit=crop&w=900&q=70" alt="wedding reception, night" title="Photo by AMISH THAKKAR on Unsplash" loading="lazy">
+        <span class="tag tag-accent">Wedding</span>
+        <span class="media-count"><i class="ph ph-play"></i>42 photos · 2 films</span>
+      </div>
+      <div class="project-body">
+        <h3>Anisha &amp; Rohan</h3>
+        <div class="project-meta">Weddings · Udaipur · Feb 2026</div>
+        <p>Three-day lakeside wedding for 320 guests, built around candlelight and a single ivory-and-brass palette.</p>
+        <div class="project-services">
+          <span class="tag tag-neutral">Décor</span><span class="tag tag-neutral">Lighting</span><span class="tag tag-neutral">Guest management</span>
+        </div>
+      </div>
+    </article>
+    <article class="project-card" data-cat="Corporate">
+      <div class="project-media">
+        <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=70" alt="conference plenary wide" title="Photo by Jakob Dalbjörn on Unsplash" loading="lazy">
+        <span class="tag tag-accent">Corporate</span>
+        <span class="media-count"><i class="ph ph-play"></i>60 photos · 1 film</span>
+      </div>
+      <div class="project-body">
+        <h3>Meridian Annual Summit</h3>
+        <div class="project-meta">Corporate · Goa · Nov 2025</div>
+        <p>1,400 delegates, five rooms, an awards night and a closing gala across three days.</p>
+        <div class="project-services">
+          <span class="tag tag-neutral">Stage &amp; LED</span><span class="tag tag-neutral">Registration</span><span class="tag tag-neutral">AV</span>
+        </div>
+      </div>
+    </article>
+    <article class="project-card" data-cat="Brand">
+      <div class="project-media">
+        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=70" alt="launch installation, dark" title="Photo by Al Elmes on Unsplash" loading="lazy">
+        <span class="tag tag-accent">Brand</span>
+        <span class="media-count"><i class="ph ph-play"></i>30 photos</span>
+      </div>
+      <div class="project-body">
+        <h3>Kite — Launch Night</h3>
+        <div class="project-meta">Brand · Mumbai · Aug 2025</div>
+        <p>A product launch staged as a dark walkthrough, with the product revealed in the final room.</p>
+        <div class="project-services">
+          <span class="tag tag-neutral">Set build</span><span class="tag tag-neutral">Lighting</span><span class="tag tag-neutral">Content</span>
+        </div>
+      </div>
+    </article>
+    <article class="project-card" data-cat="Entertainment">
+      <div class="project-media">
+        <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=900&q=70" alt="concert crowd, stage lights" title="Photo by ActionVance on Unsplash" loading="lazy">
+        <span class="tag tag-accent">Entertainment</span>
+        <span class="media-count"><i class="ph ph-play"></i>55 photos · 3 films</span>
+      </div>
+      <div class="project-body">
+        <h3>Nightfold Live</h3>
+        <div class="project-meta">Entertainment · Bengaluru · Jun 2025</div>
+        <p>Two-stage music night for 4,000, with artist management and full production.</p>
+        <div class="project-services">
+          <span class="tag tag-neutral">Artist mgmt</span><span class="tag tag-neutral">Sound</span><span class="tag tag-neutral">Rigging</span>
+        </div>
+      </div>
+    </article>
+    <article class="project-card" data-cat="Social">
+      <div class="project-media">
+        <img src="https://images.unsplash.com/photo-1744804298431-57953e4eaba0?auto=format&fit=crop&w=900&q=70" alt="garden dinner, warm light" title="Photo by iKshana Productions on Unsplash" loading="lazy">
+        <span class="tag tag-accent">Social</span>
+        <span class="media-count"><i class="ph ph-play"></i>28 photos</span>
+      </div>
+      <div class="project-body">
+        <h3>The Sethi Silver Jubilee</h3>
+        <div class="project-meta">Social · Delhi · Mar 2025</div>
+        <p>An anniversary dinner for 140 in a farmhouse garden, lit entirely from below.</p>
+        <div class="project-services">
+          <span class="tag tag-neutral">Décor</span><span class="tag tag-neutral">Catering liaison</span>
+        </div>
+      </div>
+    </article>
+    <article class="project-card" data-cat="Corporate">
+      <div class="project-media">
+        <img src="https://images.unsplash.com/photo-1708606811579-23b18fc48007?auto=format&fit=crop&w=900&q=70" alt="awards stage, LED wall" title="Photo by Sloshout on Unsplash" loading="lazy">
+        <span class="tag tag-accent">Corporate</span>
+        <span class="media-count"><i class="ph ph-play"></i>36 photos · 1 film</span>
+      </div>
+      <div class="project-body">
+        <h3>Vertex Awards</h3>
+        <div class="project-meta">Corporate · Hyderabad · Jan 2026</div>
+        <p>An awards ceremony with a 24m LED backdrop and a live broadcast feed for remote offices.</p>
+        <div class="project-services">
+          <span class="tag tag-neutral">LED</span><span class="tag tag-neutral">Broadcast</span><span class="tag tag-neutral">Show calling</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="venues">
+  <div class="split" style="grid-template-columns:.8fr 1.2fr">
+    <div>
+      <div class="section-eyebrow">Venues &amp; partners</div>
+      <h2 style="font-size:clamp(26px,3.2vw,38px)">Rooms we know, people we trust.</h2>
+      <p style="font-size:14.5px;line-height:1.68;opacity:.75;margin:0 0 20px">Standing relationships with banquet halls, resorts, farmhouses and convention centres — plus the decorators, caterers, photographers, artists and AV crews who work with us on every build.</p>
+      <a href="#contact" class="section-link">See the full venue list <i class="ph ph-arrow-right"></i></a>
+    </div>
+    <div class="venue-grid">
+      <div class="venue-card">
+        <div class="venue-media"><img src="https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&w=900&q=70" alt="banquet hall, dressed" title="Photo by Abby Savage on Unsplash" loading="lazy"></div>
+        <div class="venue-body">
+          <div class="venue-name">Banquet halls &amp; hotels</div>
+          <div class="venue-meta">200–1,500 guests · Metro cities</div>
+          <div class="venue-facilities">In-house catering, parking, AV rigging points, green rooms.</div>
+        </div>
+      </div>
+      <div class="venue-card">
+        <div class="venue-media"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=70" alt="resort lawn at dusk" title="Photo by Jeremy Wong Weddings on Unsplash" loading="lazy"></div>
+        <div class="venue-body">
+          <div class="venue-name">Resorts &amp; destination</div>
+          <div class="venue-meta">80–600 guests · Udaipur, Goa, Jaipur</div>
+          <div class="venue-facilities">Room blocks, outdoor lawns, multi-day builds, guest transfers.</div>
+        </div>
+      </div>
+      <div class="venue-card">
+        <div class="venue-media"><img src="https://images.unsplash.com/photo-1744891470493-44321ef136a2?auto=format&fit=crop&w=900&q=70" alt="farmhouse garden setup" title="Photo by Anubhav Event Productions on Unsplash" loading="lazy"></div>
+        <div class="venue-body">
+          <div class="venue-name">Farmhouses</div>
+          <div class="venue-meta">60–300 guests · Delhi NCR, Mumbai</div>
+          <div class="venue-facilities">Open ground, late-night permissions, flexible décor loads.</div>
+        </div>
+      </div>
+      <div class="venue-card">
+        <div class="venue-media"><img src="https://images.unsplash.com/photo-1601482441062-b9f13131f33a?auto=format&fit=crop&w=900&q=70" alt="convention hall, empty" title="Photo by Vaibhav Nagare on Unsplash" loading="lazy"></div>
+        <div class="venue-body">
+          <div class="venue-name">Convention centres</div>
+          <div class="venue-meta">500–3,000 delegates · Pan-India</div>
+          <div class="venue-facilities">Breakout halls, loading docks, high power load, exhibition floor.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Client testimonials">
+  <div class="quote-card">
+    <div class="quote-glow"></div>
+    <div class="quote-body">
+      <div class="section-eyebrow" style="margin-bottom:26px">Clients</div>
+      <blockquote class="quote-text" id="quoteText">“They handled everything from planning to execution. We didn’t have to worry about a thing.”</blockquote>
+      <div class="quote-footer">
+        <div class="quote-attrib" id="quoteAttrib">Anisha Verma | Wedding | Udaipur</div>
+        <div class="quote-nav">
+          <button type="button" class="btn btn-secondary btn-icon" id="quotePrev" aria-label="Previous testimonial"><i class="ph ph-arrow-left"></i></button>
+          <span id="quoteCounter">1 / 3</span>
+          <button type="button" class="btn btn-secondary btn-icon" id="quoteNext" aria-label="Next testimonial"><i class="ph ph-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-glow"></div>
+  <div class="split contact-split">
+    <div class="contact-copy">
+      <h2>Let's Create Something Extraordinary.</h2>
+      <p>Tell us the date, the room and the number of people. We will come back with a plan, a production approach and a budget.</p>
+      <button type="button" class="btn btn-primary js-open-enquiry" style="font-size:14px;padding:13px 28px">Start an enquiry<i class="ph ph-arrow-up-right"></i></button>
+      <div class="contact-details">
+        <div><div class="cd-label">Phone / WhatsApp</div><div class="cd-value">+91 98200 41120</div></div>
+        <div><div class="cd-label">Email</div><div class="cd-value">hello@avoraevents.com</div></div>
+        <div><div class="cd-label">Studio</div><div class="cd-value">14 Kalina Road, Mumbai</div></div>
+      </div>
+    </div>
+    <div class="map-card">
+      <div class="map-media">
+        <img src="assets/images/map-placeholder.png" alt="Google Maps embed of the Avora studio location">
+        <div class="scrim"></div>
+        <div class="map-pin">
+          <span class="map-label">Avora Studio · Kalina, Mumbai</span>
+          <i class="ph ph-map-pin"></i>
+        </div>
+        <div class="map-scale"><span class="bar"></span>500 m</div>
+      </div>
+      <div class="map-footer">
+        <span>Mon–Sat, 10:00–19:00 IST</span>
+        <a href="#contact">Open in Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-row">
+    <div class="footer-brand">
+      <span class="brand-mark" style="font-size:21px">AVORA</span>
+      <span class="brand-sub">Events</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Our Events</a>
+      <a href="#venues">Venues</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#contact" class="btn btn-icon btn-secondary" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+      <a href="#contact" class="btn btn-icon btn-secondary" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+      <a href="#contact" class="btn btn-icon btn-secondary" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+    </div>
+  </div>
+  <div class="footer-copyright">© 2026 Avora Events. Mumbai · Goa · Bengaluru</div>
+</footer>
+
+<div class="modal-wrap" id="enquiryModal">
+  <div class="modal-backdrop js-close-enquiry"></div>
+  <div class="modal-panel">
+    <button type="button" class="btn btn-secondary btn-icon modal-close js-close-enquiry" aria-label="Close"><i class="ph ph-x"></i></button>
+    <div class="modal-form" id="modalForm">
+      <div class="section-eyebrow">Plan your event</div>
+      <h3>Tell us about your event</h3>
+      <form id="enquiryForm">
+        <div class="form-grid">
+          <div class="field"><label>Name</label><input class="input" placeholder="Your full name"></div>
+          <div class="field"><label>Phone</label><input class="input" placeholder="+91"></div>
+          <div class="field"><label>Email</label><input class="input" type="email" placeholder="you@company.com"></div>
+          <div class="field"><label>Event type</label>
+            <select class="input">
+              <option>Wedding / Social</option><option>Corporate</option><option>Brand &amp; Experiential</option><option>Entertainment</option><option>Production only</option>
+            </select>
+          </div>
+          <div class="field"><label>Event date</label><input class="input" type="date"></div>
+          <div class="field"><label>City</label><input class="input" placeholder="Mumbai"></div>
+          <div class="field"><label>Expected guests</label><input class="input" type="number" placeholder="250"></div>
+          <div class="field"><label>Estimated budget</label>
+            <select class="input">
+              <option>Under ₹5 L</option><option>₹5–15 L</option><option>₹15–40 L</option><option>₹40 L +</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top:18px">
+          <label style="display:block;font-size:12px;margin-bottom:9px;color:color-mix(in srgb, var(--color-text) 70%, transparent)">Services required</label>
+          <div class="chip-row" id="serviceChips">
+            <button type="button" class="chip" data-chip="Planning">Planning</button>
+            <button type="button" class="chip" data-chip="Décor & staging">Décor &amp; staging</button>
+            <button type="button" class="chip" data-chip="Lighting">Lighting</button>
+            <button type="button" class="chip" data-chip="Sound & AV">Sound &amp; AV</button>
+            <button type="button" class="chip" data-chip="Photography">Photography</button>
+            <button type="button" class="chip" data-chip="Entertainment">Entertainment</button>
+            <button type="button" class="chip" data-chip="Guest management">Guest management</button>
+          </div>
+        </div>
+        <div class="field" style="margin-top:18px"><label>Event description</label><textarea class="input" placeholder="Anything that helps us understand the brief — theme, venue, must-haves."></textarea></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px">
+          <span style="font-size:12px;opacity:.5">We reply within one working day.</span>
+          <button type="submit" class="btn btn-primary" style="font-size:14px;padding:12px 26px">Submit Enquiry</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal-thanks" id="modalThanks">
+      <div class="thanks-icon"><i class="ph ph-check"></i></div>
+      <h3>Thank you! Our event specialist will get in touch with you shortly.</h3>
+      <p>Reference #AV-2609. A copy of your enquiry is on its way to your inbox.</p>
+      <button type="button" class="btn btn-secondary js-close-enquiry">Back to the site</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
