@@ -66,6 +66,7 @@ body {
   line-height: 1.55;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -141,11 +142,17 @@ textarea.input { min-height: 90px; resize: vertical; }
 
 @keyframes avFade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+
 /* ── layout shell ── */
-.page { max-width: 1440px; margin: 0 auto; overflow-x: clip; }
+.page { max-width: 1440px; margin: 0 auto; }
 
 /* ── header ── */
-.site-header { position: absolute; top: 0; left: 0; right: 0; z-index: 20; }
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 20;
+  background: rgba(255,251,249,.82);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
 .header-bar {
   display: flex; align-items: center; gap: 24px;
   padding: 18px clamp(18px,4vw,44px);
@@ -170,6 +177,7 @@ textarea.input { min-height: 90px; resize: vertical; }
   padding: 10px clamp(18px,4vw,34px) 18px;
   border-bottom: 1px solid var(--color-divider);
   background: rgba(255,251,249,.96); backdrop-filter: blur(10px);
+  max-height: calc(100vh - 60px); overflow-y: auto;
 }
 .mobile-drawer.is-open { display: flex; }
 .mobile-drawer a { padding: 9px 0; font-size: 15px; color: var(--color-text); }
@@ -187,6 +195,7 @@ textarea.input { min-height: 90px; resize: vertical; }
 .hero {
   position: relative; min-height: clamp(600px,88vh,900px);
   display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden;
+  width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw);
 }
 .hero-media { position: absolute; inset: 0; }
 .hero-media img {
